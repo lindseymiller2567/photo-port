@@ -11,6 +11,8 @@ function App() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
+  // declare a new state variable, which we'll call "currentCategories"
+  // useState returns a pair: the current state value and a function that lets you update it
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (

@@ -9,6 +9,7 @@ function Nav(props) {
         currentCategory,
     } = props;
 
+    // sets tab title 
     useEffect(() => {
         document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
