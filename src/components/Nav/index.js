@@ -19,7 +19,7 @@ function Nav(props) {
     return (
         <header data-testid="header" className="flex-row px-1">
             <h2>
-                <a data-testid="link" href="/">
+                <a data-testid="link" href="/photo-port">
                     <span role="img" aria-label="camera">📸</span>
                     Oh Snap!
                 </a>
@@ -28,12 +28,12 @@ function Nav(props) {
                 <ul className="flex-row">
                     <li className="mx-2">
                         <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About me
+                            About Me
                         </a>
                     </li>
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}> {/* if value of contactedSelected is true (user selected contact) then add CSS class navActive*/}
                         <span onClick={() => setContactSelected(true)}>
-                            Contact Me!
+                            Contact
                         </span>
                     </li>
                     {/* display each category */}
