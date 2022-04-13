@@ -33,7 +33,7 @@ function Nav(props) {
                     </li>
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}> {/* if value of contactedSelected is true (user selected contact) then add CSS class navActive*/}
                         <span onClick={() => setContactSelected(true)}>
-                            Contact
+                            Contact Me!
                         </span>
                     </li>
                     {/* display each category */}
